@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>Parker public setup</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.5; }
+    main { max-width: 40rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+    h1 { font-size: 1.6rem; line-height: 1.2; margin: 0 0 0.5rem; }
+    h2 { font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; margin: 1.5rem 0 0.35rem; }
+    p { margin: 0.5rem 0; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92rem; word-break: break-all; }
+    .panel { margin-top: 1.5rem; padding: 0.85rem 1rem; border: 1px solid #8886; border-radius: 8px; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Parker</h1>
+    <p>Public setup host for Tyler's Tesla Fleet API developer app. Use the values below for Allowed Origin, Allowed Redirect URI, and the hosted public key.</p>
+
+    <h2>Allowed Origin</h2>
+    <p><code>https://tylers-2026.github.io</code></p>
+
+    <h2>Allowed Redirect URI</h2>
+    <p><code>https://tylers-2026.github.io/callback.html</code></p>
+
+    <h2>Public key</h2>
+    <p><a href="/.well-known/appspecific/com.tesla.3p.public-key.pem" rel="noreferrer">https://tylers-2026.github.io/.well-known/appspecific/com.tesla.3p.public-key.pem</a></p>
+
+    <div class="panel">
+      <p>Connection setup still needs secure OAuth completion on a server. This site only reserves the public addresses.</p>
+      <p>The redirect page does not finish Tesla sign-in, connect a vehicle, pair a key, or send a command.</p>
+      <p>A return address that already contains a code or token is sensitive. Keep that full address out of ordinary chat.</p>
+    </div>
+  </main>
+</body>
+</html>
